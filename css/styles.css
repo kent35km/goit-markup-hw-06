@@ -541,7 +541,7 @@ img{
 }
 
 .mailing-form {
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .mailing-title {
@@ -561,10 +561,15 @@ img{
     border-radius: 4px;
     padding-left: 16px;
     color: var(--btn-white-color);
+
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailing-form .mail-input:focus {
-    border: 1px solid var(--accent-color)
+    outline: 1px solid var(--accent-color);
+    border: transparent;
 }
 
 .mail-input::placeholder {
@@ -673,6 +678,9 @@ img{
     margin-bottom: 10px;
     position: relative;
 }
+.form-field:nth-child(5) {
+    margin-bottom: 0;
+}
 
 .form-label {
     margin-bottom: 4px;
@@ -698,6 +706,10 @@ img{
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
 
+    transition-property: outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .input-icon {
@@ -716,7 +728,8 @@ img{
 }
 
 .form-input:focus {
-    border: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-color);
+    border: transparent;
 }
 
 .modal-textarea {
